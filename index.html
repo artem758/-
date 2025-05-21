@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Дезинсектор Виктор | Профессиональная дезинсекция</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Дезинсектор Виктор</h1>
+    <p>Избавление от вредителей с гарантией качества</p>
+</header>
+
+<nav>
+    <ul>
+        <li><button class="nav-btn" onclick="scrollToSection('services')">Услуги</button></li>
+        <li><button class="nav-btn" onclick="scrollToSection('reviews')">Отзывы</button></li>
+        <li><button class="nav-btn" onclick="scrollToSection('contacts')">Контакты</button></li>
+    </ul>
+</nav>
+
+<section id="services">
+    <h2>Наши услуги</h2>
+    <p>Полная дезинсекция, дератизация и обеззараживание. 100% результат!</p>
+</section>
+
+<section id="reviews">
+    <h2>Отзывы</h2>
+    <div id="review-container"></div>
+</section>
+
+<section id="review-form">
+    <h2>Оставить отзыв</h2>
+    <form>
+        <label for="name">Ваше имя:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="review">Ваш отзыв:</label><br>
+        <textarea id="review" name="review"></textarea><br><br>
+
+        <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+</section>
+
+<section id="contacts">
+    <h2>Контакты</h2>
+    <p><strong>Телефон:</strong> +7 927 223 7659</p>
+    <p><strong>Телеграм:</strong> <a href="https://t.me/vva937659">@vva937659</a></p>
+</section>
+
+<footer>
+    © 2025 Дезинсектор Виктор | Профессиональная дезинсекция
+</footer>
+
+<script src="reviews.js"></script>
+<script>
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+}
+</script>
+</body>
+</html>
+
+
